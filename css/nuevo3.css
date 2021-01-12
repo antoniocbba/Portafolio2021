@@ -1,0 +1,105 @@
+html {
+        height: 100%;
+
+}
+body{
+        background-color: #2f3050;
+        background-image: url(../img/rest3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+}
+
+.container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1024px;
+
+}
+
+header {
+            height: 50px;            
+            margin-left: auto;
+            text-align: center;
+}
+nav {
+            background-color:cornflowerblue;
+            text-align: center;
+            font-family:  'Berkshire Swash', cursive;
+            margin-top: 5px;
+            padding-bottom: 5px;
+        }
+nav a {
+            text-decoration: none; 
+            padding-left: 10px;
+            padding-right: 10px ; 
+
+}
+main {
+            height: 400px;
+            text-align: center;
+            padding-top: 80px;
+            padding-left: 240px;
+            padding-right: 240px;
+}
+main p::first-line{
+            background-color: rgba(100, 148, 237, 0.473)    ;
+}
+main p::first-letter{
+            color:#FFF;
+            font-size: 30px ;
+}
+main p::after{
+            content: " 50% discount in all orders last hour before closing  ";
+            background-color: yellowgreen;
+            color:gray;
+            font-weight: bold;
+}
+footer {
+            background-color:rgba(0, 0, 0, 0.39);
+            text-align: center;
+            height: 40px;
+            padding-top: ;
+            font-family: font-family: 'Berkshire Swash', cursive;   
+            margin-top: 80px;
+            
+}
+footer p{
+            font-size: 14px;
+            text-align: center;
+            color: whitesmoke;
+            padding-top: 13px;
+            
+}
+h1 {
+            font-size: 84px;
+            color: white;
+            font-family:font-family: 'Berkshire Swash', cursive;
+            
+}
+p {
+            font-size: 20px;
+            color: white;
+            font-family:font-family: 'Berkshire Swash', cursive;
+}
+a{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+}
+a:link { color: white}
+a:visited { color: rgb(102,0,204)}
+a:hover { color: rgb(16, 2, 97);
+            /*text-decoration-line: underline;
+            text-decoration-color:greenyellow;*/        
+        }
+a:active { color: rgb(102,0,102)}
+
+
+.maps {
+            padding-bottom: 100 px;
+            padding-left: 20%;
+            margin-bottom: 10%;
+            
+}

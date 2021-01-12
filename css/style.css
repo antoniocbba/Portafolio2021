@@ -51,17 +51,22 @@ header{
     color:#FFF;
     text-decoration:none;
     font-size: 18px;
-    padding-right:15px
+    padding-right:35px;
 }
 /* START GLOBAL STYLE TO <a> links */
-#nav-bar a:hover{
-    color:blue;
-}
-#nav-bar a:active{
-    color:green;
+#nav-bar a:link{
+    color:#FFF;
 }
 #nav-bar a:visited{
     color:#FFF;
+}
+#nav-bar a:hover{
+    color: rgb(250, 112, 30);
+    text-decoration-line: underline;
+    text-docoration-line: red;
+}
+#nav-bar a:active{
+    color:greenyellow;
 }
 /* end <a> style */
 /* Start show case */
