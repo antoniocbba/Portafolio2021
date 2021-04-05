@@ -81,3 +81,15 @@ h1{
     text-decoration: none;
     padding: 5px 5px;
 }
+/* CODE BELOW FOR CURSOR UP  */
+.item1 {
+    background-color: #20649b0c;  
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    cursor: pointer;
+    filter: invert(1); /* AMAZING Propertiy change colour from black to white*/
+    left: 94%; 
+    top: 7%;
+ }
+/* END FOR CURSORS */

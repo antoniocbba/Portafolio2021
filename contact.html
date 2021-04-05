@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portafolio 2020</title>
+        <!-- AQUI UTILIZO  -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- ANIMATION LIBRARY -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- end of ANIMATION LIBRARY  -->
+        <!-- Javascript for some reason is placed here  -->
+        <script src="main-porta.js"></script>
+    
+
+</head>
+<body>
+    <header>
+            <div class="container">
+                    <h1 class="animate__animated animate__backInDown">My Portafolio</h1>
+            </div>
+    </header>
+    <nav id="nav-bar">
+            <div class="container">
+                    <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <!-- <li><a href="#">About</a></li> -->
+                            <li><a href="index_cv.html">CV</a></li> <!-- Delete or change later -->
+                            <li><a href="contact.html">Contact</a></li>                   
+                    </ul>
+            </div>
+    </nav>
+    <!-- Content inside nice red background -->
+    <div id="showcase-address">
+    
+    <!--  <div id="showcase_address"> -->
+            <div class="container_address">
+                        <address>
+                                <h2>"Inside of every problem, lies an opportunity"</h2><br>
+                                
+                                I am very proud of having you as a guest on my first website  
+                                <h4>Antonio Ayala</h4>
+                                <!--                                  E : <img src="icons/envelope.svg" alt="Email Envelope"><a href="mailto:antoniocbba@yahoo.com">antoniocbba@yahoo.com</a>  <br>
+                                Facebook:https://faceboook.com/antonio.a.a.14<br>
+                                Twitter: @antonick <br>
+                                Instagram: <br> 
+                                London <br>
+                                United Kingdom<br>
+                                -->
+
+                                
+                        </address> 
+                        <!-- Icons twitter/ instagram / facebook  -->
+                        <ul class="social">
+                                <li><a href="mailto:antoniocbba@yahoo.com"><img src="icons/envelope.svg" alt="Email icon" ></a></li>
+                                
+                                <li><a href="https://faceboook.com/antonio.a.a.14"><img src="icons/facebook.png" alt="Facebook icon" ></a></li>
+                                <li><a href="https://twitter.com/antoninick"><img src="icons/twitter.svg" alt=" twitter"></a></li>
+                                <li><a href="#"><img src="icons/instagram.svg" alt="instagram"></a></li>
+                                
+                        </ul>   
+                        <!-- Icons twitter/ instagram / facebook  -->
+                        
+                        
+            </div>
+    </div>
+    <!-- End -->
+        <!-- FORM WITH JAVASCRIPT -->
+     
+        <div class="cont">
+                <div class="inner_box">
+                        <h3>Contact Form</h3>
+                        <div id="error_message"></div>
+                        <form action="#" name="contact_form" id="myform" onsubmit="return validation()">
+                                <!--  label is for words First Name inside teh box -->
+                                <label for="first_name">First Name *</label>
+                                <!-- Input is for the box where you enter the name  -->
+                                <input name="first_name" type="text"  value="John" id="name"/>
+                                <br>
+                                <label for="last_name">Last Name *</label>
+                                <input name="last_name" type="text"  value="Doe" id="last_name1"/>
+                                <br>
+                                <label for="email">Email *</label>
+                                <input name="email" type="email" value="johndoe@domain.com" id="email1"/>
+                                <br>
+                                <label for="message">Message *</label><br>
+                                <textarea name="message" cols="30" rows="10"   value="Enter your message here ..." id="message1"></textarea>
+                                <!-- BUTTON TO SUBMIT CONTENT  -->
+                                <div class="center">
+                                        <input type="submit" value="Submit" >
+                                        
+                                </div>
+                        </form>
+                </div>	
+        </div>     
+
+          <!-- END OF FORM  --> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <footer>
+        <p>Copyright &copy 2021 - My Portafolio</p>
+    </footer>
+    
+</body>
+</html>

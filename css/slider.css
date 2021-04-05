@@ -1,0 +1,82 @@
+body, #slider, .wrap, .slide-content{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 99%;
+    /* vh will cover 100% but you can also use 50% */
+    height: 97vh; 
+    border: 10px solid rgba(0, 0, 0, 0.372);
+    /* we do not want any scrollbars */
+    overflow-y: hidden; /* hide or disable vertical(y) scroll bar*/
+    overflow-x: hidden; /* hide or disable horizontal(x) scroll bar*/
+} 
+.wrap{
+    position: relative;
+}
+.slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slide1{
+    background-image: url('../img/img-slider/coffe1.jpg')
+}
+.slide2{
+    background-image: url('../img/img-slider/coffe2.jpg')
+}
+.slide3{
+    background-image: url('../img/img-slider/coffe3.jpg')
+}
+.slide4{
+    background-image: url('../img/img-slider/coffe4.jpg')
+}
+.slide5{
+    background-image: url('../img/img-slider/coffe5.jpg')
+}
+.slide6{
+    background-image: url('../img/img-slider/coffe6.jpg')
+}
+.slide-content{
+    display: flex;
+    /* instead of row I want a column*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slide-content span{
+    /* 5rem = 16 pixels Five times each time of the core or root element */
+    font-size: 5rem;
+    color: #fff;   
+}
+/* CREATING TRIANGULOS ARROWS */
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+
+}
+/* Properties for left Arrow */
+#arrow-left{
+    /* top 30px, button 40px, left 30px, button 0*/ 
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    /* same principal for transparent(top)/white(button)/transparent(left)/ transparent(right)*/
+    /* left arrow align left */
+    left: 0;
+    margin-left: 30px;
+}
+/* Properties for Right Arrow */
+#arrow-right{
+    /* top 30px, button 40px, left 30px, button 0*/ 
+    border-width: 30px 0px 30px 40px;
+    border-color: transparent transparent transparent  #fff;
+    /* same principal for transparent(top)/white(button)/transparent(left)/ transparent(right)*/
+    /* left arrow align left */
+    right: 0;
+    margin-right: 30px;
+}

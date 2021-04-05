@@ -1,10 +1,21 @@
+/* CSS CODE FOR MAIN WEBSITE 
+                    1. PORTAFOLIO.HTML
+                    2.CONTACT.HTML
+*/
+*{
+    margin:0;    /* removes any gap in between*/
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+} 
+
 body{
     background-color: #F4F4F4;
     color: #555555;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
-    margin:0;/* removes any gap in between*/
+    /* margin:0;removes any gap in between */
 }
 /* START GLOBAL STYLE FOR BUTTON */
 .main a{
@@ -12,13 +23,16 @@ body{
     color:#FFF;
     font-size: 11px;
     text-decoration: none;
-    padding:5px 10px;
+    padding: 5px 10px;
     border:none;
     border-radius: 5px;
+    transform: scale(0.5);
+    transition: 0.5s;
 }
 .main a:hover{
     background:orange;
     color:#FFF;
+    transform: scale(0.5) translateY(-20px);/* Icon will go up 15px*/
 }
 /* end button */
 .container{
@@ -35,11 +49,22 @@ body{
 header{
     background-color: rgb(250, 112, 62);
     color:#FFF;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    
+    /* border: groove; */
 }
+
 #nav-bar{
     background-color: #333;
     color:#FFF;
+    /* margin-top: 0; */
+    padding: 8px;
+    position: sticky;
+    top:57px;   /* Close gap between HEADER & NAVBAR */
 }
+
 #nav-bar ul{
     padding:0;
     list-style:none;
@@ -63,7 +88,7 @@ header{
 #nav-bar a:hover{
     color: rgb(250, 112, 30);
     text-decoration-line: underline;
-    text-docoration-line: red;
+    text-decoration-line: red;
 }
 #nav-bar a:active{
     color:greenyellow;
@@ -73,36 +98,265 @@ header{
 #showcase{
     background-image: url(../img/showcase1.jpg);
     background-position: center right;
-    min-height: 300px;
-    margin-bottom: 30px;
+    /* min-height: 300px; */
+    margin-bottom: 4%;  /* margen between showcase and main*/
     text-align: center;
 }
 #showcase h1{
     color:#FFF;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.6em;
+    padding: 40px;      
 }
 .main{
     float:left;
     width: 70%;
-    padding: 0 30px;
+    padding: 25px 30px;
     box-sizing: border-box;
+}
+.main h1, .main p {
+    padding: 3px;
 }
 .sidebar{
     float:right;
     width: 30%;
-    padding: 0 30px;
+    padding: 25px 30px;
     box-sizing: border-box;
 }
 
+/* HERE CODE FOR CONTACT.HTML FILE */
+
+/* Remove outline of all elements on focus */
+
+*:focus {
+	outline: 0;
+}
+
+/* Add styles to 'container' class */
+/*  OUTSIDE BOX OF CONTACT FORM*/
+/* ANTONIO FIX FROM HERE THERE IS SOMTHING NOT QUITE RIGHT */
+/* ***************** FIX CODE BELOW **************** */
+.cont {
+
+    margin: auto;
+    width: 700px;
+    /*position: absolute; THIS CODE ALLOWS TO PRODUCE AN BOX IN ANY PLACE
+    top: 550px;
+    left: 350px;*/
+    margin-top: 100px; /* space beetwen form and top background*/
+    margin-bottom: 50px;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+      
+    height: 600px;
+    background: #3ca0da41;
+    border-radius: 4px;
+    box-shadow: 4px 4px 2px rgb(10,10,16);
+    /******************* test part1*/
+    position: relative;
+}
+
+.cont inner_box{
+    margin: auto;
+    width: 200px;
+    height: 500px;
+    padding-top: 300px;
+    border: solid;
+    /**************** test part 1*/
+    /* position: absolute; */
+}
+
+
+.cont h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+
+input[type=submit] {
+    /* colour of buttom submit */
+    background: #64B5F6;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+}
+
+/* Add styles for 'focus' on buttom  property */
+
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style buttom 'hover' property */
+
+input[type=submit]:hover {
+    
+    background: #2196F3;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+    /* position: absolute; 
+    align-items: center;
+    justify-content: center; */
+    text-align: center; 
+    
+    
+}
+
+/* END CONTACT.HTML */
+
+/****** PROJECT ICONS START *********/
+/* project1 -> similar to parent in FLEX*/
+#project1 {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*It aline children to center or  flex-end/ strech/center;  */
+}
+/* project2 work similar to child in FLEX */
+.project2 img {
+    /* size of icons */
+    width: 50px;
+    
+}
+/****** PROJECT ICONS END  *********/
+/****** ERROR MESSAGE          *********/
+.cont #error_message {
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+
+}
+
+/****** END OF ERROR MESSAGE  *********/
+/****** CODE FOR CONTACT.HTML  ADDRESS OF ANTONIO  *********/
+/* ******************************************************* */
+#showcase-address{
+    background-image: url(../img/showcase1.jpg);
+    background-position: center right;
+    min-height: 230px;   /* space beetwen social icons and white part */
+    /* margin-bottom: 30px; */
+    text-align: center;
+}
+/* Code below controls size of h2 reflextion message*/
+.container_address h2 {
+    /* increment space on letter*/
+    letter-spacing: 1px;
+}
+/* Code below for NAME ANTONIO AYALA */
+.container_address h4 {
+    padding: 0;
+    font-size: larger;
+    color: #F4F4F4;
+    font-weight: bolder;
+    /*text-shadow: 2px 2px 5px red; Text Shadow not working here*/
+}
+.container_address a{
+    color: aliceblue;
+    text-decoration: none;
+}
+/* CODE for envelope  */
+/*Increase size of ICONS  ****/
+.container_address img, .social img{
+    width: 40px; 
+    height: 40px;
+}
+
+.container_address{
+    padding-top: 60px;
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+    display: block;
+    color: #FFF;
+    font-style: italic;
+    font-size: 20px;
+}
+    /***** TESTING ICONS TWITTER / INST */
+    /* Social media Icons */
+.social {
+    
+    position: relative;
+    /*bottom: 80px; */
+    bottom: 50%;   /* lenght of icons from bottom to where it is*/
+    z-index: 10;
+    display: flex; /* makes all icons to be place in one line */
+    justify-content: center;
+    align-items: center;
+}
+/* Get rid of bullet points */
+.social li {
+    list-style: none;
+}
+.social li a {
+ 
+    display: inline-block;
+    filter: invert(1); /* invert Icons from Black color to White IMPORTANT */
+    /*margin-right: 20px;  original option sapace of icons */
+    margin-right: 40px;
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+.social li a:hover {
+    transform: scale(0.5) translateY(-15px); /* Icon will go up 15px*/
+}
+
+    /***** TESTING ICONS TWITTER / INST */
+
+
+/****** END OF ADDRESS OF ANTONIO   *********/
 
 /* end showcase */
 footer{
 background: #333;
 color:#FFF;
 text-align: center;
-padding:3px;
-margin-top:200px
+padding: 8px;
+/*margin-top:20px*/
 }
 @media(max-width:600px){
     .main{
@@ -114,3 +368,4 @@ margin-top:200px
         float:none;
     }
 }
+   
