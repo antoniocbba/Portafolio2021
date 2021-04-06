@@ -1,6 +1,5 @@
 /* CSS CODE FOR MAIN WEBSITE 
-                    1. PORTAFOLIO.HTML
-                    
+                    1.CONTACT.HTML
 */
 *{
     margin:0;    /* removes any gap in between*/
@@ -40,12 +39,12 @@ body{
     margin:auto;
     overflow: hidden;
 }
-.photo{
+/* .photo{
     width: 70%;
     height: 40%;
     float: center;
     box-sizing: border-box;
-}
+} */
 header{
     background-color: rgb(250, 112, 62);
     color:#FFF;
@@ -125,48 +124,51 @@ header{
 /* HERE CODE FOR CONTACT.HTML FILE */
 
 /* Remove outline of all elements on focus */
-/* 
+
 *:focus {
 	outline: 0;
-} */
+}
 
 /* Add styles to 'container' class */
 /*  OUTSIDE BOX OF CONTACT FORM*/
 /* ANTONIO FIX FROM HERE THERE IS SOMTHING NOT QUITE RIGHT */
 /* ***************** FIX CODE BELOW **************** */
-/* .cont {
-
+.cont {
+    /******************* test part1*/
     margin: auto;
-    width: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /************ test 6/04*/
+
+    width: 700px; /***** SIZE OF  Width of CONTACT FORM ***/
+    height: 620px; /***** SIZE OF  height of CONTACT FORM ***/
+    
     /*position: absolute; THIS CODE ALLOWS TO PRODUCE AN BOX IN ANY PLACE
     top: 550px;
     left: 350px;*/
-    /* margin-top: 100px; /* space beetwen form and top background*/
-    /* margin-bottom: 50px;
+    margin-top: 100px; /* space beetwen form and top background*/
+    margin-bottom: 50px;
     padding-top: 30px; 
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
       
-    height: 600px;
     background: #3ca0da41;
     border-radius: 4px;
     box-shadow: 4px 4px 2px rgb(10,10,16);
-    ****************** test part1 */
-    /* position: relative;
-} */
-/* 
+    }
+
 .cont inner_box{
     margin: auto;
-    width: 200px;
-    height: 500px;
+    /* Test *** */
+    /* width: 200px; */
+    /* height: 500px; */
     padding-top: 300px;
     border: solid;
-    *************** test part 1 
-    /* position: absolute; 
-} */
+}
 
-/* 
+
 .cont h3 {
     text-align: center;
     text-transform: uppercase;
@@ -175,10 +177,10 @@ header{
 label {
 	font-size: 0.85em;
 	margin-left: 12px;
-} */
+}
 
 /* Add styles to 'input' and 'textarea' selectors */
-/* 
+
 input[type=text],input[type=email], textarea {
     width: 100%;
     padding: 12px;
@@ -188,18 +190,18 @@ input[type=text],input[type=email], textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-} */
+}
 
 /* Add styles to show 'focus' of selector */
-/* 
+
 input[type=text]:focus,input[type=email]:focus, textarea:focus {
 	border: 1px solid green;
-} */
+}
 
 /* Add styles to the submit button */
 
-/* input[type=submit] {
-    /* colour of buttom submit 
+input[type=submit] {
+    /* colour of buttom submit */
     background: #64B5F6;
 	margin: 0 auto;
 	outline: 0;
@@ -214,53 +216,53 @@ input[type=text]:focus,input[type=email]:focus, textarea:focus {
     letter-spacing: 1px;
     cursor: pointer;
     
-} */
+}
 
 /* Add styles for 'focus' on buttom  property */
-/* 
+
 input[type=submit]:focus {
 	background: #A5D6A7;
 	color: whitesmoke;
-} */
+}
 
 /* Style buttom 'hover' property */
-/* 
+
 input[type=submit]:hover {
     
     background: #2196F3;
-} */
+}
 
 /* Align items to center of the 'div' with the class 'center' */
-/* .center {
+.center {
     /* position: absolute; 
     align-items: center;
     justify-content: center; */
-    /* text-align: center; 
+    text-align: center; 
     
     
-} */  
+}
 
 /* END CONTACT.HTML */
 
 /****** PROJECT ICONS START *********/
 /* project1 -> similar to parent in FLEX*/
-/* #project1 {
+#project1 {
     margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /*It aline children to center or  flex-end/ strech/center;  
-} */
+    /*It aline children to center or  flex-end/ strech/center;  */
+}
 /* project2 work similar to child in FLEX */
-/* .project2 img {
+.project2 img {
     /* size of icons */
-    /* width: 50px;
+    width: 50px;
     
-} */ 
+}
 /****** PROJECT ICONS END  *********/
 /****** ERROR MESSAGE          *********/
-/* .cont #error_message {
+.cont #error_message {
     margin-bottom: 20px;
     padding: 0px;
     background: #fe8b8e;
@@ -268,7 +270,7 @@ input[type=submit]:hover {
     font-size: 14px;
     transition: all 0.5s ease;
 
-} */
+}
 
 /****** END OF ERROR MESSAGE  *********/
 /****** CODE FOR CONTACT.HTML  ADDRESS OF ANTONIO  *********/
@@ -277,7 +279,7 @@ input[type=submit]:hover {
     background-image: url(../img/showcase1.jpg);
     background-position: center right;
     min-height: 230px;   /* space beetwen social icons and white part */
-    /* margin-bottom: 30px; */
+
     text-align: center;
 }
 /* Code below controls size of h2 reflextion message*/
@@ -365,5 +367,17 @@ padding: 8px;
         width: 100%;
         float:none;
     }
+    .cont{
+        width: 100%;
+        /* width: 700px; **** SIZE OF  Width of CONTACT FORM ** */
+        height: 100%; /***** SIZE OF  height of CONTACT FORM ***/
+
+        float:none; 
+    }
+    /* .cont .inner_box{
+        width: 100%;
+        float:none;
+    }
+     */
 }
    
