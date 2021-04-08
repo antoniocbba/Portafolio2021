@@ -1,3 +1,9 @@
+*{
+        margin: 0;    /* removes any gap in between*/
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+} 
 html {
         height: 100%;
 
@@ -8,13 +14,18 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        display: flex;
+        font-family: 'Berkshire Swash', cursive;
+
+        /* display: inline; */
         
 }
 
-.container {
+.container {          
             margin-left: auto;
             margin-right: auto;
-            width: 1024px;
+            display: inline;
+            overflow: hidden;
 
 }
 
@@ -29,6 +40,8 @@ nav {
             font-family:  'Berkshire Swash', cursive;
             margin-top: 5px;
             padding-bottom: 5px;
+            position: sticky; 
+
         }
 nav a {
             text-decoration: none; 
@@ -42,6 +55,7 @@ main {
             padding-top: 80px;
             padding-left: 240px;
             padding-right: 240px;
+            /* overflow: hidden; */
 }
 main p::first-line{
             background-color: rgba(100, 148, 237, 0.473)    ;
@@ -60,8 +74,8 @@ footer {
             background-color:rgba(0, 0, 0, 0.39);
             text-align: center;
             height: 40px;
-            padding-top: ;
-            font-family: font-family: 'Berkshire Swash', cursive;   
+            padding-top: 0;
+            /* font-family: 'Berkshire Swash', 'cursive';    */
             margin-top: 80px;
             
 }
@@ -75,13 +89,12 @@ footer p{
 h1 {
             font-size: 84px;
             color: white;
-            font-family:font-family: 'Berkshire Swash', cursive;
             
 }
 p {
             font-size: 20px;
             color: white;
-            font-family:font-family: 'Berkshire Swash', cursive;
+            /* font-family:'Berkshire Swash', cursive      ; */
 }
 a{
             color: white;
@@ -96,10 +109,36 @@ a:hover { color: rgb(16, 2, 97);
         }
 a:active { color: rgb(102,0,102)}
 
-
 .maps {
-            padding-bottom: 100 px;
+            /* padding-bottom: 100 px;
             padding-left: 20%;
             margin-bottom: 10%;
+                 */
+        width: 50%;
+        height: 50%;
+        border: 5px  border black;
+        margin: 30px auto;
+                 
+                 /* flex-direction: column; */
+        
+        align-items: center;
+        justify-content: center;         
             
 }
+.item2{
+        position: fix;
+        /* background-color: thistle;  */
+}
+
+@media(max-width:600px) {
+        .main .container {
+            width: 100%;
+            float:none;
+        }
+        .sidebar .maps{
+            width: 100%;
+            float:none;
+        }
+        
+    }
+    
