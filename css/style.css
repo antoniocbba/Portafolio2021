@@ -242,22 +242,28 @@ input[type=submit]:hover {
 
 /* END CONTACT.HTML */
 
-/****** PROJECT ICONS START *********/
-/* project1 -> similar to parent in FLEX*/
-/* #project1 {
-    margin-top: 5%;
+/****** PROJECT ICONS (html, css3, ....)*********/
+/************************************/
+.parent {
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;  /*MAIN AXIS*/
     justify-content: center;
-    align-items: center;
-    /*It aline children to center or  flex-end/ strech/center;  
-} */
+    /* align-items: center; 
+    text-align: center; */ 
+} 
 /* project2 work similar to child in FLEX */
-/* .project2 img {
+.child1, .child2, .child3, .child4, .child5, img {
     /* size of icons */
-    /* width: 50px;
+    /* height: 50px; */
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* flex:1 1 5px;  */
     
-} */ 
+    
+}
 /****** PROJECT ICONS END  *********/
 /****** ERROR MESSAGE          *********/
 /* .cont #error_message {

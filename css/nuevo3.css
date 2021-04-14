@@ -82,7 +82,7 @@ a:active { color: rgb(102,0,102)}
 /*** FLEX CODE FROM HERE PARENT FIRST  */
 /* *********************************** */
 .parent{
-    height: 100%;
+    /* height: %; */
     /* border: 20px solid goldenrod; */
     display: flex;
     flex-wrap: wrap;
@@ -91,7 +91,7 @@ a:active { color: rgb(102,0,102)}
     align-items: center;
 }
 .child1{
-    padding-top: 15%;
+    padding-top: 10%;
     padding-bottom: 10%;
     flex:1 1 400px;
     /* max-width: auto; */
