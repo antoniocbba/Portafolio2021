@@ -59,7 +59,7 @@ header{
     color:#FFF;
     /* margin-top: 0; */
     padding: 8px;
-    position: sticky;
+    position: sticky; 
     top:57px;   /* Close gap between HEADER & NAVBAR */
 }
 
